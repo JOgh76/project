@@ -69,7 +69,7 @@ class PdfProcessor:
         """
         - Extract the red dashed lines
         - Plot them into an image
-        - Return some intersection info (placeholder for now)
+        - Return the path to the generated image
         """
         output_image_path = "/home/knapo/Desktop/output.png" 
 
@@ -79,11 +79,4 @@ class PdfProcessor:
         # Plot and save as an image
         plot_red_dashed_lines(red_dashed_lines, output_image_path)
 
-        intersection_info = "Intersection info"
-        return intersection_info
-
-# Test directly (optional)
-if __name__ == "__main__":
-    pdf_processor = PdfProcessor()
-    pdf_file_path = "/home/knapo/Desktop/OCV_D.1.3._PBR_DPS_101_P┼«DORYS 1.NP.pdf"
-    pdf_processor.process_file(pdf_file_path)
+        return output_image_path
